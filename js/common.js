@@ -59,7 +59,7 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
   });
 function logout() {
   //remove jwtToken from cookie
-  document.cookie = "jwtToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "jwtToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
   window.location.href = "./login.html";
 }
 
