@@ -11,7 +11,7 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
   })
   .then(function (data) {
     if (data == null) {
-      window.location.href = "login.html";
+      window.location.href = "./login.html";
     } else {
       currentUser = {
         email: data.email,
@@ -120,5 +120,5 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
   });
 
 function showTaskDetail(id) {
-  window.location.href = "task-add.html?id=" + id;
+  window.location.href = "./task-add.html?id=" + id;
 }

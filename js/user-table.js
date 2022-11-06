@@ -93,12 +93,12 @@ function deleteUser(code, event) {
 
 //get detail of user, send redirect to user-details.html
 function getDetail(code) {
-  window.location.href = "user-details.html?code=" + code;
+  window.location.href = "./user-details.html?code=" + code;
 }
 
 //edit user
 function editUser(code) {
-  window.location.href = "user-add.html?code=" + code;
+  window.location.href = "./user-add.html?code=" + code;
 }
 
 toJson = function (form) {

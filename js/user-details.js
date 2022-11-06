@@ -13,7 +13,7 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
   })
   .then(function (data) {
     if (data.role.id == 3 && data.code != code) {
-      window.location.href = "index.html?message=not-permission";
+      window.location.href = "./index.html?message=not-permission";
     }
   })
   .catch(function (error) {

@@ -100,7 +100,7 @@ function addUser(event) {
         //suscess using toastr
         toastr.success("Thêm thành công");
         setTimeout(function () {
-          window.location.href = "user-table.html";
+          window.location.href = "./user-table.html";
         }, 2000);
       } else {
         toastr.error("Thêm thất bại");

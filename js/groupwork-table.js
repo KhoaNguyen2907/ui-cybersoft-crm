@@ -96,12 +96,12 @@ function deleteProject(id, event) {
 
 //edit project
 function editProject(id, event) {
-  window.location.href = "/groupwork-add.html?id=" + id;
+  window.location.href = "./groupwork-add.html?id=" + id;
 }
 
 //get detail project
 function getDetail(id, event) {
-  window.location.href = "/groupwork-details.html?id=" + id;
+  window.location.href = "./groupwork-details.html?id=" + id;
 }
 
 function toJson(form) {

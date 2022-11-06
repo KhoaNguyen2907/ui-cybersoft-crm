@@ -67,7 +67,7 @@ function deleteRole(id, event) {
 
 //button edit role redirect to edit role page
 function editRole(id) {
-  window.location.href = "role-add.html?id=" + id;
+  window.location.href = "./role-add.html?id=" + id;
 }
 
 //convert form to json

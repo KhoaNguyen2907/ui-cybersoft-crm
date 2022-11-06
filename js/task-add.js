@@ -129,7 +129,7 @@ function addTask(event) {
       if (data.isSuccess == true) {
         toastr.success("Thêm thành công");
         setTimeout(function () {
-          window.location.href = "/task.html";
+          window.location.href = "./task.html";
         }, 2000);
       } else {
         //toastr fail

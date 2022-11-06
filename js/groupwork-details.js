@@ -61,9 +61,6 @@ fetch("https://cybersoft-crm.herokuapp.com/api/task/project?id=" + id, {
         user.push(data[i].user);
       }
     }
-    console.log("list user");
-    console.log(user);
-
     for (var i = 0; i < user.length; i++) {
       let taskOfUser = [];
       for (var j = 0; j < data.length; j++) {
@@ -71,8 +68,6 @@ fetch("https://cybersoft-crm.herokuapp.com/api/task/project?id=" + id, {
           taskOfUser.push(data[j]);
         }
       }
-      console.log("task of " + i + ": ");
-      console.log(taskOfUser);
       //if task status is unstart, add to unstart column
       var unstartTask = [];
       var executingTask = [];

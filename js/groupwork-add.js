@@ -64,7 +64,7 @@ function addProject(event) {
       if (data.isSuccess == true) {
         toastr.success("Thêm thành công");
         setTimeout(function () {
-          window.location.href = "/groupwork.html";
+          window.location.href = "./groupwork.html";
         }, 2000);
       } else {
         toastr.error("Thêm không thành công");

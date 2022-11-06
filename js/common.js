@@ -9,7 +9,7 @@ function getCookie(name) {
 var jwtToken = getCookie("jwtToken");
 //check if jwt token is exist
 if (jwtToken == null) {
-  window.location.href = "login.html";
+  window.location.href = "./login.html";
 }
 
 //check if user is logged in by fetch api with jwt token
@@ -26,7 +26,7 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
   })
   .then(function (data) {
     if (data == null) {
-      window.location.href = "login.html";
+      window.location.href = "./login.html";
     } else {
       currentUser = {
         email: data.email,
@@ -60,7 +60,7 @@ fetch("https://cybersoft-crm.herokuapp.com/get-current-user", {
 function logout() {
   //remove jwtToken from cookie
   document.cookie = "jwtToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-  window.location.href = "login.html";
+  window.location.href = "./login.html";
 }
 
 //convert date object to string

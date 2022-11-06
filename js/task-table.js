@@ -95,12 +95,12 @@ function deleteTask(id, event) {
 
 //edit project
 function editTask(id, event) {
-  window.location.href = "/task-add.html?id=" + id;
+  window.location.href = "./task-add.html?id=" + id;
 }
 
 //get detail project
 function getDetail(id, event) {
-  window.location.href = "/groupwork-details.html?id=" + id;
+  window.location.href = "./groupwork-details.html?id=" + id;
 }
 
 function toJson(form) {

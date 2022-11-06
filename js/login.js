@@ -9,7 +9,7 @@ function getCookie(name) {
 var jwtToken = getCookie("jwtToken");
 //check if jwt token is exist
 if (jwtToken != null) {
-  window.location.href = "index.html";
+  window.location.href = "./index.html";
 }
 
 //do login
@@ -39,14 +39,14 @@ function doLogin() {
     success: function (data) {
       console.log(data);
       if (data.isSuccess == true) {
-        alert("Đăng nhập thành công");
         //save data to cookie
         document.cookie = "jwtToken=" + data.data;
+        alert("Đăng nhập thành công");
         //save user to local storage
         // localStorage.setItem("currentUserCode", data.data.code);
         // localStorage.setItem("currentUserName", data.data.fullName);
         // localStorage.setItem("currentUserEmail", data.data.email);
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
       } else {
         alert("Đăng nhập không thành công");
       }
